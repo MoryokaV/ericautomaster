@@ -1,3 +1,4 @@
 .DS_Store
 /node_modules/
-/css/
+/css/bootstrap.css
+/css/bootstrap.css.map
