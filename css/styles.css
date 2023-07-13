@@ -1,0 +1,107 @@
+body {
+  font-family: "Work Sans";
+}
+
+i.fas,
+i.fa,
+i.far,
+i.fab {
+  vertical-align: middle;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.navbar .navbar-nav .nav-link {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.navbar .btn-primary {
+  border-radius: 0;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.py-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.btn-md {
+  padding: 12px 18px;
+}
+
+.rotate {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.tire-img {
+  max-height: 60px;
+}
+
+.px-20 {
+  padding: 20px 0px;
+}
+
+.stick {
+  width: 35%;
+  height: 2px;
+  background-color: #adb5bd;
+}
+
+.icon-sm {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  padding: 10px 0;
+  background-color: #000;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+}
+
+.gallery-col {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.gallery-col img {
+  margin: 2px;
+}
