@@ -26,6 +26,14 @@ i.fab {
   margin-bottom: 40px;
 }
 
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
 .mt-80 {
   margin-top: 80px;
 }
@@ -45,8 +53,8 @@ i.fab {
   padding-bottom: 40px;
 }
 
-.mb-80 {
-  margin-bottom: 80px;
+.pb-40 {
+  padding-bottom: 40px;
 }
 
 .btn-md {
@@ -74,7 +82,7 @@ i.fab {
 
 .stick {
   width: 35%;
-  height: 2px;
+  height: 1px;
   background-color: #adb5bd;
 }
 
@@ -104,4 +112,16 @@ i.fab {
 
 .gallery-col img {
   margin: 2px;
+}
+
+.avatar {
+  border-radius: 100%;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background-color: #343a40;
+  color: #868e96;
+  font-weight: 800;
+  font-size: 44px;
 }
