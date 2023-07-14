@@ -13,6 +13,8 @@ i.fab {
   overflow: hidden;
 }
 
+/* NAVBAR */
+
 .navbar .navbar-nav .nav-link {
   margin-right: 20px;
   text-transform: uppercase;
@@ -21,6 +23,8 @@ i.fab {
 .navbar .btn-primary {
   border-radius: 0;
 }
+
+/* UTILITIES */
 
 .mb-40 {
   margin-bottom: 40px;
@@ -57,27 +61,12 @@ i.fab {
   padding-bottom: 40px;
 }
 
-.btn-md {
-  padding: 12px 18px;
-}
-
-.rotate {
-  animation: spin 5s linear infinite;
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.tire-img {
-  max-height: 60px;
-}
-
 .px-20 {
   padding: 20px 0px;
+}
+
+.btn-md {
+  padding: 12px 18px;
 }
 
 .stick {
@@ -94,11 +83,20 @@ i.fab {
   align-items: center;
 }
 
-#footer {
-  padding: 10px 0;
-  background-color: #000;
-  color: white;
+/* ANIMATIONS */
+
+.rotate {
+  animation: spin 5s linear infinite;
 }
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* GALLERY */
 
 .gallery {
   display: flex;
@@ -114,6 +112,24 @@ i.fab {
   margin: 2px;
 }
 
+/* REVIEWS */
+
+.tire-img {
+  max-height: 60px;
+}
+
+.carousel {
+  min-height: 500px;
+}
+
+.carousel-control-prev {
+  transform: translateX(-100%);
+}
+
+.carousel-control-next {
+  transform: translateX(100%);
+}
+
 .avatar {
   border-radius: 100%;
   margin: 0 auto;
@@ -124,4 +140,12 @@ i.fab {
   color: #868e96;
   font-weight: 800;
   font-size: 44px;
+}
+
+/* FOOTER */
+
+#footer {
+  padding: 10px 0;
+  background-color: #000;
+  color: white;
 }
