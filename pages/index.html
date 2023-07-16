@@ -15,6 +15,9 @@
       rel="stylesheet"
     />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
@@ -76,7 +79,7 @@
               <a class="nav-link" href="#about">Despre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">Mașini</a>
+              <a class="nav-link" href="#cars">Mașini</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#reviews">Recenzii</a>
@@ -128,29 +131,49 @@
       </div>
     </section>
 
-    <section id="gallery" class="bg-body-secondary pb-40">
+    <section id="cars" class="bg-body-secondary pb-40">
       <div class="container">
         <h2 class="mb-3 text-center">Galerie</h2>
         <div class="stick mx-auto mb-5"></div>
 
         <div class="gallery">
           <div class="gallery-col wow fadeIn" data-wow-delay="0.1s">
-            <img src="../img/gallery/eric1.jpg" />
-            <img src="../img/gallery/eric2.jpg" />
-            <img src="../img/gallery/eric3.jpg" />
+            <a href="../img/gallery/eric1.jpg" data-fancybox="gallery">
+              <img src="../img/gallery/eric1.jpg" />
+            </a>
+            <a href="../img/gallery/eric2.jpg" data-fancybox="gallery">
+              <img src="../img/gallery/eric2.jpg" />
+            </a>
+            <a href="../img/gallery/eric3.jpg" data-fancybox="gallery">
+              <img src="../img/gallery/eric3.jpg" />
+            </a>
           </div>
           <div class="gallery-col wow fadeIn" data-wow-delay="0.25s">
-            <img src="../img/gallery/eric5.jpg" />
-            <img src="../img/gallery/eric6.jpg" />
-            <img src="../img/gallery/eric7.jpg" />
+            <a href="../img/gallery/eric5.jpg" data-fancybox="gallery">
+              <img src="../img/gallery/eric5.jpg" />
+            </a>
+            <a href="../img/gallery/eric6.jpg" data-fancybox="gallery">
+              <img src="../img/gallery/eric6.jpg" />
+            </a>
+            <a href="../img/gallery/eric7.jpg" data-fancybox="gallery">
+              <img src="../img/gallery/eric7.jpg" />
+            </a>
           </div>
           <div class="gallery-col wow fadeIn" data-wow-delay="0.4s">
-            <img src="../img/gallery/eric8.jpg" />
-            <img src="../img/gallery/eric9.jpg" />
+            <a href="../img/gallery/eric8.jpg" data-fancybox="gallery">
+              <img src="../img/gallery/eric8.jpg" />
+            </a>
+            <a href="../img/gallery/eric9.jpg" data-fancybox="gallery">
+              <img src="../img/gallery/eric9.jpg" />
+            </a>
           </div>
           <div class="gallery-col wow fadeIn" data-wow-delay="0.55s">
-            <img src="../img/gallery/eric11.jpg" />
-            <img src="../img/gallery/eric10.jpg" />
+            <a href="../img/gallery/eric11.jpg" data-fancybox="gallery">
+              <img src="../img/gallery/eric11.jpg" />
+            </a>
+            <a href="../img/gallery/eric10.jpg" data-fancybox="gallery">
+              <img src="../img/gallery/eric10.jpg" />
+            </a>
           </div>
         </div>
       </div>
@@ -193,7 +216,7 @@
           </div>
 
           <div class="col-lg-8">
-            <div class="text-center mt-80">
+            <div class="text-center mt-40">
               <h5 class="text-primary">RECENZII</h5>
               <h4 class="display-6 fw-semibold mb-5">Ce părere au clienții noștri?</h4>
               <div
@@ -216,6 +239,12 @@
                     data-bs-target="#reviewsCarousel"
                     data-bs-slide-to="1"
                     aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#reviewsCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
                   ></button>
                 </div>
                 <div class="carousel-inner">
@@ -254,6 +283,23 @@
                     <hr class="w-25 mx-auto" />
                     <h5>Doina Stoian</h5>
                     <span>Medic chirurg</span>
+                  </div>
+                  <div class="carousel-item review-item text-center">
+                    <div class="position-relative mb-5">
+                      <div class="avatar">VP</div>
+                      <div
+                        class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                        style="width: 60px; height: 60px"
+                      >
+                        <i class="fa fa-quote-left fa-2x text-primary"></i>
+                      </div>
+                    </div>
+                    <p class="fs-4 text-secondary">
+                      Recomand cu incredere serviciile domnului instructor Tecuceanu Marius.
+                    </p>
+                    <hr class="w-25 mx-auto" />
+                    <h5>Viorel Popescu</h5>
+                    <span>Mecanic auto</span>
                   </div>
                 </div>
                 <button
@@ -461,6 +507,8 @@
     <script src="../js/wow.min.js"></script>
     <script>
       new WOW().init();
+
+      Fancybox.bind("[data-fancybox]", {});
 
       const footer = document.querySelector("#footer div");
       footer.innerHTML = `@ ${new Date().getFullYear()} toate drepurile rezervate <a href="ericautomaster.ro">ericautomaster.ro</a>`;

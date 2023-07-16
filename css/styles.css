@@ -76,7 +76,7 @@ i.fab {
 }
 
 .icon-sm {
-  width: 35px;
+  min-width: 35px;
   height: 35px;
   display: inline-flex;
   justify-content: center;
@@ -108,12 +108,6 @@ i.fab {
   background-position: center;
 }
 
-@media screen and (max-width: 576px) {
-  .hero-img {
-    height: 30vh;
-  }
-}
-
 /* GALLERY */
 
 .gallery {
@@ -127,6 +121,7 @@ i.fab {
 }
 
 .gallery-col img {
+  width: 100%;
   margin: 2px;
 }
 
@@ -137,7 +132,7 @@ i.fab {
 }
 
 .carousel {
-  min-height: 500px;
+  min-height: 430px;
 }
 
 .carousel-control-prev {
@@ -146,6 +141,10 @@ i.fab {
 
 .carousel-control-next {
   transform: translateX(100%);
+}
+
+.carousel-indicators {
+  transform: translateY(200%);
 }
 
 .avatar {
@@ -166,4 +165,28 @@ i.fab {
   padding: 10px 0;
   background-color: #000;
   color: white;
+}
+
+/* MEDIA QUERIES */
+
+/* XS */
+@media screen and (max-width: 576px) {
+  .hero-img {
+    height: 30vh;
+  }
+
+  .carousel {
+    min-height: 480px;
+  }
+}
+
+/* SM */
+@media screen and (max-width: 768px) {
+  .gallery {
+    flex-wrap: wrap;
+  }
+
+  .gallery-col {
+    width: 50%;
+  }
 }
