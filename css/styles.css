@@ -125,6 +125,23 @@ i.fab {
   padding: 2px;
 }
 
+/* LICENSE */
+.category-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 2px;
+}
+
+.category-block {
+  display: block;
+  border: 1px #495057 solid;
+  color: #495057;
+  font-weight: 500;
+  width: 35px;
+  text-align: center;
+}
+
 /* REVIEWS */
 
 .tire-img {
