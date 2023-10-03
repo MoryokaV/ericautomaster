@@ -134,10 +134,12 @@ i.fab {
 
 /* LICENSE */
 .category-container {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 10px;
-  gap: 2px;
+  gap: 3px;
 }
 
 .category-block {
