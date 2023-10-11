@@ -106,13 +106,9 @@ i.fab {
 /* HERO */
 
 .hero-img {
-  background-image: url("../img/drive.jpg");
   height: 50vh;
   width: 100%;
-  background-size: cover;
   object-fit: cover;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 /* GALLERY */

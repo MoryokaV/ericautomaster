@@ -103,7 +103,7 @@
           <a href="#about" class="btn btn-outline-secondary rounded-pill btn-md">Despre noi</a>
         </div>
       </div>
-      <div class="hero-img"></div>
+      <img class="hero-img" src="img/drive.jpg" alt="hero image">
     </section>
 
     <!-- ABOUT US -->
@@ -621,11 +621,17 @@
       <div class="container text-center"></div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
 
       Fancybox.bind("[data-fancybox]", {});
+
+      const heroImg = document.getElementsByClassName("hero-img")[0];
+      new simpleParallax(heroImg, {
+        scale: 1.6
+      });
 
       const footer = document.querySelector("#footer div");
       footer.innerHTML = `@ ${new Date().getFullYear()} toate drepurile rezervate <a href="ericautomaster.ro">ericautomaster.ro</a>`;
