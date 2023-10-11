@@ -194,7 +194,7 @@ i.fab {
 /* XS */
 @media screen and (max-width: 576px) {
   .hero-img {
-    height: 30vh;
+    height: 35vh;
   }
 }
 
