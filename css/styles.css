@@ -92,6 +92,14 @@ i.fab {
 
 /* ANIMATIONS */
 
+.navbar-brand:hover .brand-icon {
+  transform: rotate(-18deg);
+}
+
+.brand-icon {
+  transition: all 0.3s ease;
+}
+
 .rotate {
   animation: spin 5s linear infinite;
 }
