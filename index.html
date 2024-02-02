@@ -13,18 +13,20 @@
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg"/>
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" defer/>
+    <link rel="stylesheet" href="css/styles.css" defer />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" defer/>
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" defer/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <link rel="preload" as="image" href="img/drive.webp">
   </head>
 
   <body>
@@ -76,7 +78,7 @@
           </svg>
           Eric Automaster
         </a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-links">
+        <button class="navbar-toggler" aria-label="menu button" data-bs-toggle="collapse" data-bs-target="#navbar-links">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-links">
@@ -112,7 +114,7 @@
           <a href="#about" class="btn btn-outline-secondary rounded-pill btn-md">Despre noi</a>
         </div>
       </div>
-      <img class="hero-img" src="img/drive.jpg" alt="poza ora de condus">
+      <img class="hero-img" src="img/drive.webp" alt="poza ora de condus">
     </section>
 
     <!-- ABOUT US -->
@@ -133,7 +135,7 @@
             </p>
           </div>
           <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <img src="img/gallery/eric12.jpg" alt="fotografie sală pregătire teoretică de pe bulevardul dorobanți" class="img-fluid" />
+            <img src="img/gallery/eric12.webp" alt="fotografie sală pregătire teoretică de pe bulevardul dorobanți" class="img-fluid" />
           </div>
         </div>
       </div>
@@ -146,75 +148,75 @@
 
         <div class="gallery">
           <div class="gallery-col wow fadeIn" data-wow-delay="0.15s">
-            <a href="img/gallery/eric22.jpg" data-fancybox="gallery">
-              <img src="img/gallery/eric22.jpg" />
+            <a href="img/gallery/eric22.webp" data-fancybox="gallery">
+              <img src="img/gallery/eric22.webp" />
             </a>
-            <a href="img/gallery/eric23.jpg" data-fancybox="gallery">
-              <img src="img/gallery/eric23.jpg" />
+            <a href="img/gallery/eric23.webp" data-fancybox="gallery">
+              <img src="img/gallery/eric23.webp" />
             </a>
             <a
-              href="img/gallery/eric25.jpg"
+              href="img/gallery/eric25.webp"
               data-fancybox="gallery"
               data-caption="Skoda Fabia 2009 - eleganță și tehnologie"
             >
-              <img src="img/gallery/eric25.jpg" />
+              <img src="img/gallery/eric25.webp" />
             </a>
             <a
-              href="img/gallery/eric26.jpg"
+              href="img/gallery/eric26.webp"
               data-fancybox="gallery"
               data-caption="Skoda Fabia 2009 - eleganță și tehnologie"
             >
-              <img src="img/gallery/eric26.jpg" />
+              <img src="img/gallery/eric26.webp" />
             </a>
           </div>
           <div class="gallery-col wow fadeIn" data-wow-delay="0.3s">
-            <a href="img/gallery/eric24.jpg" data-fancybox="gallery" data-caption="VW Polo Mk4 - confort si simplitate">
-              <img src="img/gallery/eric24.jpg" />
+            <a href="img/gallery/eric24.webp" data-fancybox="gallery" data-caption="VW Polo Mk4 - confort si simplitate">
+              <img src="img/gallery/eric24.webp" />
             </a>
-            <a href="img/gallery/eric21.jpg" data-fancybox="gallery" data-caption="VW Polo Mk4 - confort si simplitate">
-              <img src="img/gallery/eric21.jpg" />
+            <a href="img/gallery/eric21.webp" data-fancybox="gallery" data-caption="VW Polo Mk4 - confort si simplitate">
+              <img src="img/gallery/eric21.webp" />
             </a>
-            <a href="img/gallery/eric20.jpg" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric20.jpg" />
+            <a href="img/gallery/eric20.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
+              <img src="img/gallery/eric20.webp" />
             </a>
-            <a href="img/gallery/eric16.jpg" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric16.jpg" />
+            <a href="img/gallery/eric16.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
+              <img src="img/gallery/eric16.webp" />
             </a>
           </div>
           <div class="gallery-col wow fadeIn" data-wow-delay="0.45s">
-            <a href="img/gallery/eric28.jpg" data-fancybox="gallery" data-caption="VW Golf 5 - performanță">
-              <img src="img/gallery/eric28.jpg" />
+            <a href="img/gallery/eric28.webp" data-fancybox="gallery" data-caption="VW Golf 5 - performanță">
+              <img src="img/gallery/eric28.webp" />
             </a>
-            <a href="img/gallery/eric27.jpg" data-fancybox="gallery" data-caption="VW Golf 5 - performanță">
-              <img src="img/gallery/eric27.jpg" />
+            <a href="img/gallery/eric27.webp" data-fancybox="gallery" data-caption="VW Golf 5 - performanță">
+              <img src="img/gallery/eric27.webp" />
             </a>
-            <a href="img/gallery/eric9.jpg" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric9.jpg" />
+            <a href="img/gallery/eric9.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
+              <img src="img/gallery/eric9.webp" />
             </a>
           </div>
           <div class="gallery-col wow fadeIn" data-wow-delay="0.6s">
-            <a href="img/gallery/eric8.jpg" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric8.jpg" />
+            <a href="img/gallery/eric8.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
+              <img src="img/gallery/eric8.webp" />
             </a>
-            <a href="img/gallery/eric11.jpg" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric11.jpg" />
+            <a href="img/gallery/eric11.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
+              <img src="img/gallery/eric11.webp" />
             </a>
-            <a href="img/gallery/eric10.jpg" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric10.jpg" />
+            <a href="img/gallery/eric10.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
+              <img src="img/gallery/eric10.webp" />
             </a>
             <a
-              href="img/gallery/eric13.jpg"
+              href="img/gallery/eric13.webp"
               data-fancybox="gallery"
               data-caption="Teste de pregătire pentru examenul teoretic"
             >
-              <img src="img/gallery/eric13.jpg" />
+              <img src="img/gallery/eric13.webp" />
             </a>
             <a
-              href="img/gallery/eric17.jpg"
+              href="img/gallery/eric17.webp"
               data-fancybox="gallery"
               data-caption="Teste de pregătire pentru examenul teoretic"
             >
-              <img src="img/gallery/eric17.jpg" />
+              <img src="img/gallery/eric17.webp" />
             </a>
           </div>
         </div>
@@ -238,7 +240,7 @@
               <div class="row gy-3">
                 <div class="col-md-6 col-lg-auto d-flex justify-content-center align-items-center">
                   <img
-                    src="img/gallery/marius.jpg"
+                    src="img/gallery/marius.webp"
                     class="img-fluid card-image"
                     alt="Marius Tecuceanu - instructorul scolii de soferi Eric Automaster"
                   />
@@ -249,7 +251,7 @@
                       <p class="text-primary uppercase fw-bold mb-0">PERMIS DE CONDUCERE</p>
                       <img src="img/euro.jpg" width="80" style="border-radius: 4px;" alt="european union logo" />
                     </div>
-                    <h5 class="card-title mb-3 fs-3">Tecuceanu-Rizea Marius</h5>
+                    <h4 class="card-title mb-3 fs-3">Tecuceanu-Rizea Marius</h4>
                     <h6 class="card-subtitle mb-2 text-body-secondary fs-5">Instructor auto - Șofer profesionist</h6>
                     <p class="card-text">
                       Experiența mea în domeniul autovehiculelor își face simțită prezența mai semnificativ din perioada
@@ -572,6 +574,7 @@
             height="550"
             style="border: 0; width: 100%"
             allowfullscreen=""
+            preconnect
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
