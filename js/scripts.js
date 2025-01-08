@@ -41,3 +41,32 @@ document.getElementById("register-form").addEventListener("submit", function(eve
 
     // Optionally, you can submit the form data via AJAX here
 });
+
+
+// CANVAS
+
+const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Desenează corpul mașinii
+    ctx.fillStyle = "red";
+    ctx.fillRect(100, 150, 300, 50);
+
+    // Desenează partea de sus a mașinii
+    ctx.fillStyle = "lightblue";
+    ctx.beginPath();
+    ctx.moveTo(150, 150);
+    ctx.lineTo(200, 100);
+    ctx.lineTo(300, 100);
+    ctx.lineTo(350, 150);
+    ctx.closePath();
+    ctx.fill();
+
+    // Desenează roțile
+    ctx.fillStyle = "black";
+    ctx.beginPath();
+    ctx.arc(150, 210, 20, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(350, 210, 20, 0, Math.PI * 2);
+    ctx.fill();
