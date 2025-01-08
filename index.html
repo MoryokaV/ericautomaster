@@ -11,7 +11,7 @@
     <meta property="og:site_name" content="Eric Automaster - Școală de șoferi"/>
     <meta property="og:title" content="Eric Automaster - Școală de șoferi"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" href="https://ericautomaster.ro/og-logo.jpg"/>
+    <meta property="og:image" content="https://ericautomaster.ro/og-logo.jpg"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
 
@@ -22,12 +22,12 @@
 
     <link rel="stylesheet" href="css/bootstrap.css" defer/>
     <link rel="stylesheet" href="css/styles.css" defer />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" defer/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" defer/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
@@ -39,7 +39,7 @@
   <body>
     <!-- TOPBAR -->
     <div class="container-fluid bg-body-subtle p-0">
-      <div class="row gx-0 d-none d-lg-flex">
+      <div class="row gx-0 d-flex" id="topbar">
         <div class="col-lg-7 px-5 text-start">
           <div class="h-100 d-inline-flex align-items-center me-4">
             <small class="fa fa-map-marker-alt text-primary me-2"></small>
@@ -85,25 +85,19 @@
           </svg>
           Eric Automaster
         </a>
-        <button class="navbar-toggler" aria-label="menu button" data-bs-toggle="collapse" data-bs-target="#navbar-links">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-links">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Acasă</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Despre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cars">Mașini</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Recenzii</a>
-            </li>
-          </ul>
-          <a href="#contact" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block fw-semibold">Începe acum</a>
+        <div class="d-flex justify-content-end align-items-center">
+          <button class="menu-btn">
+            <i class="fa fa-bars"></i>
+            <ul class="dropdown">
+              <li><a href="#">Acasă</a></li>
+              <li><a href="#about">Despre</a></li>
+              <li><a href="#cars">Mașini</a></li>
+              <li><a href="#reviews">Recenzii</a></li>
+            </ul>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-links">
+            <a href="#contact" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block fw-semibold">Începe acum</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -129,6 +123,7 @@
       <div class="container py-40">
         <div class="row mb-40">
           <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div id="animated-box"></div>
             <h2 class="display-6 fw-semibold">
               De ce să alegi școala de șoferi <span class="text-primary fs-1">Eric Automaster</span>?
             </h2>
@@ -156,60 +151,60 @@
         <div class="gallery">
           <div class="gallery-col wow fadeIn" data-wow-delay="0.15s">
             <a href="img/gallery/eric22.webp" data-fancybox="gallery">
-              <img src="img/gallery/eric22.webp" />
+              <img src="img/gallery/eric22.webp" alt="masini-eric"/>
             </a>
             <a href="img/gallery/eric23.webp" data-fancybox="gallery">
-              <img src="img/gallery/eric23.webp" />
+              <img src="img/gallery/eric23.webp" alt="masini-eric"/>
             </a>
             <a
               href="img/gallery/eric25.webp"
               data-fancybox="gallery"
               data-caption="Skoda Fabia 2009 - eleganță și tehnologie"
             >
-              <img src="img/gallery/eric25.webp" />
+              <img src="img/gallery/eric25.webp" alt="masini-eric"/>
             </a>
             <a
               href="img/gallery/eric26.webp"
               data-fancybox="gallery"
               data-caption="Skoda Fabia 2009 - eleganță și tehnologie"
             >
-              <img src="img/gallery/eric26.webp" />
+              <img src="img/gallery/eric26.webp" alt="masini-eric"/>
             </a>
           </div>
           <div class="gallery-col wow fadeIn" data-wow-delay="0.3s">
             <a href="img/gallery/eric24.webp" data-fancybox="gallery" data-caption="VW Polo Mk4 - confort si simplitate">
-              <img src="img/gallery/eric24.webp" />
+              <img src="img/gallery/eric24.webp" alt="masini-eric"/>
             </a>
             <a href="img/gallery/eric21.webp" data-fancybox="gallery" data-caption="VW Polo Mk4 - confort si simplitate">
-              <img src="img/gallery/eric21.webp" />
+              <img src="img/gallery/eric21.webp" alt="masini-eric"/>
             </a>
             <a href="img/gallery/eric20.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric20.webp" />
+              <img src="img/gallery/eric20.webp" alt="masini-eric"/>
             </a>
             <a href="img/gallery/eric16.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric16.webp" />
+              <img src="img/gallery/eric16.webp" alt="masini-eric"/>
             </a>
           </div>
           <div class="gallery-col wow fadeIn" data-wow-delay="0.45s">
             <a href="img/gallery/eric28.webp" data-fancybox="gallery" data-caption="VW Golf 5 - performanță">
-              <img src="img/gallery/eric28.webp" />
+              <img src="img/gallery/eric28.webp" alt="masini-eric"/>
             </a>
             <a href="img/gallery/eric27.webp" data-fancybox="gallery" data-caption="VW Golf 5 - performanță">
-              <img src="img/gallery/eric27.webp" />
+              <img src="img/gallery/eric27.webp" alt="masini-eric"/>
             </a>
             <a href="img/gallery/eric9.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric9.webp" />
+              <img src="img/gallery/eric9.webp" alt="masini-eric"/>
             </a>
           </div>
           <div class="gallery-col wow fadeIn" data-wow-delay="0.6s">
             <a href="img/gallery/eric8.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric8.webp" />
+              <img src="img/gallery/eric8.webp" alt="masini-eric"/>
             </a>
             <a href="img/gallery/eric11.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric11.webp" />
+              <img src="img/gallery/eric11.webp" alt="masini-eric"/>
             </a>
             <a href="img/gallery/eric10.webp" data-fancybox="gallery" data-caption="Sală utilată la standarde europene">
-              <img src="img/gallery/eric10.webp" />
+              <img src="img/gallery/eric10.webp" alt="masini-eric"/>
             </a>
             <a
               href="img/gallery/eric13.webp"
@@ -232,7 +227,7 @@
 
     <!-- REVIEWS -->
     <section id="reviews" class="py-40 mb-40">
-      <div class="container-lg">
+      <article class="container-lg">
         <div
           class="d-flex flex-wrap justify-content-center align-items-center mb-4 wow fadeInRight"
           data-wow-delay="0.2s"
@@ -243,12 +238,12 @@
 
         <div class="row row-cols-1 justify-content-center">
           <div class="col-sm-10 col-md-12 col-lg-11 mb-40">
-            <div class="card shadow-sm p-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="card shadow-sm p-4 wow fadeInUp position-relative" data-wow-delay="0.1s" style="">
               <div class="row gy-3">
                 <div class="col-md-6 col-lg-auto d-flex justify-content-center align-items-center">
                   <img
                     src="img/gallery/marius.webp"
-                    class="img-fluid card-image"
+                    class="img-fluid card-image transition-box"
                     alt="Marius Tecuceanu - instructorul scolii de soferi Eric Automaster"
                   />
                 </div>
@@ -270,9 +265,9 @@
                       contribuind la creșterea siguranței rutiere pe drumurile noastre!
                       Buna instruire reprezintă prioritatea noastră zilnică!
 
-                      <br></br>
+                      <br><br>
                       <em>Cu deosebit respect!</em>
-                      <br></br>
+                      <br><br>
                     </p>
                     <div class="category-container">
                       <div class="category-block">AM</div>
@@ -402,7 +397,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </section>
 
     <!-- FAQ -->
@@ -570,6 +565,31 @@
       </div>
     </section>
 
+
+      <div class="container py-40 text-center">
+        <h2 class="mb-3">Înregistrează-te</h2>
+        <div class="stick mx-auto mb-4"></div>
+        <form id="register-form" class="row g-3">
+          <section class="col-12">
+            <label for="name" class="form-label">Nume</label>
+            <input type="text" id="name" class="form-control" name="name" maxlength="60" pattern="^[A-Z][a-z\s]{3, 30}$" title="Numele trebuie sa inceapa cu litera mare. Caractere permise [A-z]. Lungime maxima 30 de caractere." required>
+          </section> 
+          <section class="col-12 d-flex flex-wrap gap-3">
+            <label for="plan" class="col-form-label">Plan</label>
+            <div class="col">
+              <select id="plan" name="plan" class="form-select">
+                <option value="-" selected disabled hidden>-</option>
+                <option value="Standard 1200 RON">Standard 1200 RON</option>
+                <option value="Premium 2000 RON">Premium 2000 RON</option>
+              </select>
+            </div>
+          </section>
+          <section class="col-12">
+            <button type="submit" class="btn btn-primary"><span>Trimite</span></button>
+          </section>
+        </form>
+      </div>
+
     <!-- CONTACT -->
     <section class="container-md py-40 mb-40" id="contact">
       <div class="row gy-3">
@@ -579,7 +599,6 @@
             height="550"
             style="border: 0; width: 100%"
             allowfullscreen=""
-            preconnect
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
@@ -621,14 +640,6 @@
               >facebook.com/ericautomaster</a
             >
           </div>
-          <div class="d-flex align-items-center mb-3">
-            <small class="icon-sm rounded-circle bg-body-secondary text-primary me-3">
-              <i class="fab fa-google"></i>
-            </small>
-            <a href="https://maps.app.goo.gl/U6MsBbd8daE538GR6" target="_blank" class="fw-medium fs-6"
-              >https://maps.app.goo.gl/U6MsBbd8daE538GR6</a
-            >
-          </div>
         </div>
       </div>
     </section>
@@ -640,6 +651,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script>
       new WOW().init();
 
@@ -650,8 +662,6 @@
         scale: 1.6
       });
 
-      const footer = document.querySelector("#footer div");
-      footer.innerHTML = `@ ${new Date().getFullYear()} toate drepurile rezervate <a href="ericautomaster.ro">ericautomaster.ro</a>`;
     </script>
   </body>
 </html>
